@@ -11,6 +11,14 @@
 
 ---
 
+### 🌐 Live Deployment Links
+- 🚀 **Live Storefront (Vercel):** [https://1fi-sde-assignment-seven.vercel.app/products](https://1fi-sde-assignment-seven.vercel.app/products)
+- 📱 **iPhone 17 Pro Page:** [https://1fi-sde-assignment-seven.vercel.app/products/iphone-17-pro](https://1fi-sde-assignment-seven.vercel.app/products/iphone-17-pro)
+- 📡 **Backend API (Render):** [https://onefi-sde-assignment.onrender.com/api/health](https://onefi-sde-assignment.onrender.com/api/health)
+- 🗄 **Database:** Managed PostgreSQL (Neon)
+
+---
+
 ## 📖 Table of Contents
 1. [Overview & Core Value Proposition](#-overview--core-value-proposition)
 2. [Key Features](#-key-features)
