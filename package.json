@@ -1,0 +1,28 @@
+{
+  "name": "1fi-sde-assignment",
+  "version": "1.0.0",
+  "private": true,
+  "description": "1Fi SDE1 Assignment - Full-stack web application for mutual fund backed EMI smartphone purchases",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=client & npm run dev --workspace=server",
+    "dev:server": "npm run dev --workspace=server",
+    "dev:client": "npm run dev --workspace=client",
+    "build": "npm run build --workspace=client",
+    "install:all": "npm install && npm install --workspace=server && npm install --workspace=client"
+  },
+  "keywords": [
+    "1fi",
+    "fintech",
+    "emi",
+    "react",
+    "express",
+    "prisma",
+    "postgresql"
+  ],
+  "author": "",
+  "license": "ISC"
+}

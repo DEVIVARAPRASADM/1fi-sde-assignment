@@ -1,0 +1,27 @@
+{
+  "name": "1fi-sde-assignment-server",
+  "version": "1.0.0",
+  "description": "Backend API for 1Fi SDE1 Assignment",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "prisma:generate": "npx prisma generate",
+    "prisma:migrate": "npx prisma migrate dev",
+    "prisma:push": "npx prisma db push",
+    "prisma:seed": "node prisma/seed.js",
+    "db:start": "node scripts/start-db.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.22.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "embedded-postgres": "^18.4.0-beta.17",
+    "nodemon": "^3.1.7",
+    "prisma": "^5.22.0"
+  }
+}
