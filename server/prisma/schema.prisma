@@ -1,0 +1,61 @@
+// Prisma schema for 1Fi SDE1 Assignment
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Product {
+  id          Int        @id @default(autoincrement())
+  slug        String     @unique
+  name        String
+  description String
+  mrp         Int
+  price       Int
+  rating      Float      @default(4.9)
+  reviewCount Int        @default(1250)
+  brand       String     @default("Flagship")
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+
+  variants    Variant[]
+  emiPlans    EMIPlan[]
+
+  @@map("products")
+}
+
+model Variant {
+  id        Int      @id @default(autoincrement())
+  productId Int
+  color     String
+  colorHex  String?
+  storage   String
+  finish    String?
+  image     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@map("variants")
+}
+
+model EMIPlan {
+  id             Int      @id @default(autoincrement())
+  productId      Int
+  monthlyPayment Int
+  tenureMonths   Int
+  interestRate   Float
+  cashback       Int      @default(0)
+  isRecommended  Boolean  @default(false)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  product        Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@map("emi_plans")
+}
