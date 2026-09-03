@@ -343,28 +343,6 @@ Inspired by high-converting consumer electronics and financing platforms:
 
 ---
 
-## 📦 Git Commit History
-
-The repository has been structured into clean, atomic commits:
-
-1. `fb29f4d` `chore: initialize project structure`
-2. `ae0c5a4` `feat: setup PostgreSQL and Prisma`
-3. `403d923` `feat: add product database schema`
-4. `4725838` `feat: add product and EMI seed data`
-5. `4cc8a74` `feat: implement product APIs`
-6. `db257a5` `feat: implement product listing page`
-7. `371d6df` `feat: implement dynamic product page`
-8. `0d69fa3` `feat: add product image gallery`
-9. `7244cc2` `feat: add variant selection`
-10. `3e40020` `feat: add EMI plan selection`
-11. `c038caa` `feat: add EMI proceed flow`
-12. `b89316a` `style: improve product page UI`
-13. `3b13815` `style: improve responsive design`
-14. `6944d03` `feat: add loading and error states`
-15. `docs: comprehensive setup and architectural documentation`
-
----
-
 ## 👨‍💻 Author & Submission
 - **Author:** Devivaraprasad Mullaguri
 - **Assignment:** 1Fi SDE1 Full-Stack Technical Assignment
