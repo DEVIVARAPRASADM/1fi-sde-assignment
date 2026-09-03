@@ -12,6 +12,10 @@
     "dev:server": "npm run dev --workspace=server",
     "dev:client": "npm run dev --workspace=client",
     "build": "npm run build --workspace=client",
+    "db:start": "npm run db:start --workspace=server",
+    "db:push": "npm run prisma:push --workspace=server",
+    "db:seed": "npm run prisma:seed --workspace=server",
+    "db:studio": "npx prisma studio --schema=server/prisma/schema.prisma",
     "install:all": "npm install && npm install --workspace=server && npm install --workspace=client"
   },
   "keywords": [
