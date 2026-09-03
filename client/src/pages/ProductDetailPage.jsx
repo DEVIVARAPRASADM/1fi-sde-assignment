@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import React, { useCallback, useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import { fetchProductBySlug } from '../services/api';
 import Breadcrumb from '../components/Breadcrumb';
 import ProductGallery from '../components/ProductGallery';
@@ -11,12 +11,7 @@ import { ProductDetailSkeleton } from '../components/SkeletonLoader';
 import ErrorState from '../components/ErrorState';
 import {
   Star,
-  ShieldCheck,
-  Zap,
   Cpu,
-  Smartphone,
-  CheckCircle,
-  HelpCircle,
   TrendingUp,
   CreditCard,
   ArrowRight,
@@ -32,7 +27,7 @@ export default function ProductDetailPage() {
   const [error, setError] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const loadProduct = async () => {
+  const loadProduct = useCallback(async () => {
     try {
       setLoading(true);
       setError(null);
@@ -55,12 +50,12 @@ export default function ProductDetailPage() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [slug]);
 
   useEffect(() => {
     loadProduct();
     window.scrollTo(0, 0);
-  }, [slug]);
+  }, [loadProduct]);
 
   if (loading) {
     return <ProductDetailSkeleton />;

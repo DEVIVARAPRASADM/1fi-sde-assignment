@@ -4,7 +4,7 @@
 [![React](https://img.shields.io/badge/React-19-blue.svg)](https://react.dev/)
 [![Express](https://img.shields.io/badge/Express-4-lightgrey.svg)](https://expressjs.com/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-18-blue.svg)](https://www.postgresql.org/)
-[![Prisma](https://img.shields.io/badge/Prisma-6-teal.svg)](https://www.prisma.io/)
+[![Prisma](https://img.shields.io/badge/Prisma-5-teal.svg)](https://www.prisma.io/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-38bdf8.svg)](https://tailwindcss.com/)
 
 > An interview-ready, production-grade full-stack web application designed for the **1Fi SDE1 Assignment**. This application provides a product browsing and purchase experience for flagship smartphones powered by **smart EMI plans backed by mutual fund investments**, drawing inspiration from modern fintech and consumer credit platforms like Snapmint.
@@ -234,7 +234,7 @@ model EMIPlan {
 | :--- | :--- |
 | **Frontend** | React 19, Vite, Tailwind CSS, Lucide React, Axios, React Router 7 |
 | **Backend** | Node.js (v22+), Express.js 4, Morgan, CORS, Dotenv |
-| **Database** | PostgreSQL 18, Prisma ORM 6, Embedded-Postgres |
+| **Database** | PostgreSQL 18, Prisma ORM 5, Embedded-Postgres |
 | **Styling** | Modern Fintech Palette (Indigo/Emerald/Slate), Custom Typography (Plus Jakarta Sans) |
 
 ---

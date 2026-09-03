@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Star, ShieldCheck, ArrowRight, Sparkles } from 'lucide-react';
+import { Star, ArrowRight, Sparkles } from 'lucide-react';
 
 export default function ProductCard({ product }) {
   const primaryVariant = product.variants?.[0] || {};

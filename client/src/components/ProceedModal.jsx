@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, CheckCircle, ShieldCheck, Sparkles, ArrowRight, Gift, Calendar } from 'lucide-react';
+import { X, CheckCircle, ShieldCheck, Sparkles, ArrowRight, Gift } from 'lucide-react';
 
 export default function ProceedModal({
   isOpen,

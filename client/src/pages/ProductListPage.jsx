@@ -3,7 +3,7 @@ import { fetchProducts } from '../services/api';
 import ProductCard from '../components/ProductCard';
 import { ProductListSkeleton } from '../components/SkeletonLoader';
 import ErrorState from '../components/ErrorState';
-import { Sparkles, Shield, TrendingUp, ArrowUpRight } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 
 export default function ProductListPage() {
   const [products, setProducts] = useState([]);
